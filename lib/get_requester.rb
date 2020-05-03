@@ -18,10 +18,9 @@ class GetRequester
   
   def parse_json
     data = JSON.parse(self.get_response_body)
-    data.collect do ||
-      program["agency"]  
+    data.collect do |new_data|
+      new_data["agency"]  
     end
-    puts programs.program_school.uniq
   end 
   
 end
