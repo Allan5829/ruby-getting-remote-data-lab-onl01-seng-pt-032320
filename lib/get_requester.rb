@@ -24,3 +24,5 @@ class GetRequester
   end 
   
 end
+programs = GetRequester.new.get_response_body
+puts programs
